@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic";
+}
+
+body {
+  background-color: #efedfd;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navegador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegador ul {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+
+.link:after {
+  display: block;
+  content: "";
+  border-bottom: 5px solid tomato;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+}
+
+.link-activo {
+  border-bottom: 5px solid tomato;
+}
+
+.presentacion {
+  width: 100%;
+  background: url("../img/banner-principal-min.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.principal {
+  flex-basis: 45%;
+  height: 50%;
+  color: white;
+}
+
+.principal button {
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  background-color: #a3caff;
+  font-weight: bold;
+}
+
+.principal button:hover {
+  cursor: pointer;
+}
+
+.espaciado {
+  height: 64px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  background-image: linear-gradient(
+    to left top,
+    #0f0f0f,
+    #3b263e,
+    #7d355b,
+    #c5425e,
+    #ff6347
+  );
+  height: 400px;
+  flex-basis: 32%;
+  margin: 0 20px;
+  color: white;
+}
+
+.info img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.info p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+hr {
+  border: 3px solid tomato;
+  width: 45%;
+  margin: 20px auto;
+}
+
+.contenedor-ubicacion {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.caja1,
+.caja2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  background-image: linear-gradient(
+    to top,
+    #0f0f0f,
+    #1c1b1d,
+    #2a2528,
+    #393033,
+    #493c3c
+  );
+  height: 200px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
+footer p {
+  text-align: center;
+  margin: 10px 0;
+  color: silver;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer div img {
+  text-align: center;
+}
+
+    /*ÁREA DE QUIENES SOMOS*/
+.nosotros {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.descripcion p {
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: space-around:
+}
+
+.mision,.vision {
+  flex-basis: 50%;
+}
+
+.mision {
+  border-right: 2px solid tomato;
+}
+.vision {
+  border-left: 2px solid tomato;
+}
+
+.descripcion2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.descripcion2 ul, .descripcion3 ul {
+  margin: 10px auto;
+  padding: 35px;
+  list-style-image: url("https://img.icons8.com/color/25/000000/strawberry.png");
+}
+
+.descripcion2 ul p, strong {
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.descripcion2 li, .descripcion3 li {
+  margin: 20px 0;
+}
+
+.descripcion2 li:nth-child(1), .descripcion3 li:nth-child(1){
+  margin-top: 0;
+}
+
+.valores, .objetivos {
+  flex-basis: 50%;
+}
+
+.descripcion3 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.descripcion3 p {
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.encabezado-producto {
+  width: 40%;
+  margin: 10px auto;
+  border-bottom: 5px solid tomato;
+}
+
+.producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 179, 65);
+  height: 75vh;
+}
+
+.valor-nutricional {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.producto p {
+  flex-basis: 50%;
+  text-align: justify;
+  margin-right: 35px;
+  color: black;
+  font-weight: bold;
+}
+
+.nosotros-fresas {
+  margin-top: 30px;
+  text-align: center;
+}
+
+    /*ÁREA DE MENÚ*/
+.titulo-catalogo {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.catalogo {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  justify-content: space-around;
+}
+
+.lista-producto {
+  border: 3px solid tomato;
+  padding: 10px;
+}
+
+.catalogo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalogo h3 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.titulo-producto {
+  width: 75%;
+  text-align: left;
+}
+
+.catalogo .precio {
+  width: 20%;
+  text-align: right;
+  color: tomato;
+}
+
+.agregar-producto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.agregar-producto button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 40px;
+}
+
+.agregar-producto button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+      /*ÁREA DE CONTACTO*/
+.caja-contacto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.caja-contacto h3 {
+  margin: 0 0 40px;
+  padding: 0;
+  color: tomato;
+  text-transform: uppercase; 
+}
+
+.caja-contacto input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.caja-contacto textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.caja-contacto input, .caja-contacto textarea {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.caja-contacto textarea {
+  margin-bottom: 20px;
+}
+
+.caja-contacto input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: tomato;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.caja-contacto form div {
+   position: relative;
+}
+
+.caja-contacto form div label{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: .5s;
+  pointer-events: none;
+}
+
+.caja-contacto input:focus ~ label,
+.caja-contacto textarea:focus ~ label,
+.caja-contacto input:valid ~ label, 
+.caja-contacto textarea:valid ~ label{
+  top: -12px;
+  left: 0;
+  color: tomato;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.caja-contacto input:focus,
+.caja-contacto textarea:focus,
+.caja-contacto input:valid, 
+.caja-contacto textarea:valid{ 
+  border-bottom: 2px solid tomato;
+}
+
+.pie-pagina-contacto {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+}
+
+                                              /*APARTADO PARA RESPONSIVE*/
+@media screen and (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .navegador {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .info {
+    margin: 10px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
+  /*Área de quiénes somos*/
+  .nosotros {
+    height: 40vh;
+  }
+
+  .descripcion {
+    flex-direction: column;
+  }
+
+  .mision {
+    border-right: none;
+    border-bottom: 2px solid tomato;
+  }
+  .vision {
+    border-left: none;
+    border-top: 2px solid tomato;
+  } 
+
+  .descripcion2{
+    flex-direction: column;
+  }
+
+  .descripcion3 {
+    width: 100%;
+  }
+
+  .producto p {
+    display: none;
+  }
+
+  .valor-nutricional {
+    flex-basis: 100%;
+  }
+
+      /*ÁREA DE CATÁLOGO*/
+  .catalogo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 300px auto;
+    width: 75%;
+  }
+
+    /*ÁREA DE CONTACTENOS*/
+  .caja-contacto {
+    margin: 50px auto;
+  }
+}
+
+
